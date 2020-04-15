@@ -14,7 +14,8 @@ varphiInterfererDegrees = [-180 : 1 : 180];
 varphiInterfererRadians = varphiInterfererDegrees * (pi/180);
 
 %Define the antenna spacing (in number of wavelengths)
-antennaSpacing = 1/2; %Half wavelength distance
+antennaSpacing = 0.5; %Half wavelength distance $d_{\text{H}} = 0.5$
+%the interference is reduced by either \textbf{increasing $M$} and/or \textbf{using a larger $d_{\text{H}}$}
 
 %Preallocate matrix for storing the simulation results
 gfunction = zeros(length(varphiInterfererDegrees), length(Mvalues));
